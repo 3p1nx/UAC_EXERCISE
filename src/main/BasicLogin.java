@@ -19,6 +19,5 @@ public class BasicLogin implements ILogin {
 		}
 		
 	}
-	//halo pak
 	
 }
