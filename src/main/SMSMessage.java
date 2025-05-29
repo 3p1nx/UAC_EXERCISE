@@ -7,7 +7,8 @@ public class SMSMessage extends Message {
 	 }
 	 
 	 public void send(String name, String password) {
-			if(login.authenticate(name, password) == 1) {
+		 Credential credential = new Credential(name, password);
+			if(login.authenticate(credential) == 1) {
 				System.out.println("SMS sent from " +sender +" to "+recipient+": "+ content);
 			}else {
 				System.out.println("Email authentication failed for user: "+ name);

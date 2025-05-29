@@ -11,8 +11,8 @@ public class BasicLogin implements ILogin {
 	}
 
 	@Override
-	public int authenticate(String username, String pass) {
-		if(username == name && this.pass == pass) {
+	public int authenticate(Credential credential) {
+		if(credential.name == name && credential.key == pass) {
 			return 1;
 		}else {
 			return 0;

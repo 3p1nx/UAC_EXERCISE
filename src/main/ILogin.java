@@ -1,5 +1,6 @@
 package main;
 
 public interface ILogin{
-	int authenticate(String username, String password);
+	int authenticate(Credential credential);
+	
 }

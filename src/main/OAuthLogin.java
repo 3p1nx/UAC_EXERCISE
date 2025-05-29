@@ -9,10 +9,9 @@ public class OAuthLogin implements ILogin {
 		this.token = token;
 	}
 
-
 	@Override
-	public int authenticate(String username, String token) {
-		if(this.token == token) {
+	public int authenticate(Credential credential) {
+		if(this.token == credential.key) {
 			return 1;
 		}else {
 			return 0;

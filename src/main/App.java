@@ -1,6 +1,5 @@
 package main;
 
-
 public class App {
     public static void main(String[] args) {
         ILogin emailLogin = new BasicLogin("alice", "password123");
